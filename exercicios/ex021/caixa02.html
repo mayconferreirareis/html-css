@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        h1{
+            color: brown;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h2{
+            color: brown;
+        }
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(165, 81, 81);
+    margin: 0px;
+}
+header{
+    background-color: rgb(236, 236, 204) ;
+    padding: 10px;
+    margin: 10px;
+}
+nav{
+    background-color: rgb(170, 115, 115);
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 5px 3px 7px rgba(0, 0, 0, 0.548);
+   
+}
+nav >a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 30px ;
+   
+}
+
+nav > a:hover {
+    text-decoration: underline;
+}
+main{
+    background-color: rgb(236, 236, 204) ;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px 0px;
+    box-shadow: 4px 4px 9px 0px;
+}
+article{
+    background-color: lightgray;
+    padding: 5px;
+}
+article >aside{
+    background-color: rgb(209, 171, 171);
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 4px;
+    margin: 0px;
+}
+footer > p {
+   margin: 0px; 
+}
+div#bola {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lamor Doceria</h1>
+        <nav>
+            <a href="#">Brigadeiros</a>
+            <a href="#">Doces Saudáveis</a>
+            <a href="#">Doces Finos(casamento)</a>
+            <a href="#">Doceria Móvel</a>
+        </nav>
+    </header>
+    <main>
+       <section id="assuntos">
+        <p>Doces Feitos com Amor</p>
+       </section>
+
+       <section id="noticias">
+           <article>
+            <h2>Qual o nosso propósito:</h2>
+            <p>
+                Nossos Produtos são produzidos com o todo  Amor para tornar os seus dias mais doces.
+            </p>
+            <aside>
+                <p>Artigo escrito por maycon ferreira</p>
+            </aside>
+
+           </article>
+           <article>
+
+           </article>
+       </section>
+
+    </main>
+    <footer>
+        <p>Desenvolvido por Msde Tecnologia</p>
+    </footer>
+    <div id="bola"></div>
+
+
+    
+</body>
+</html>
