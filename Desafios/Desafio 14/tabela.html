@@ -15,16 +15,20 @@
         thead {
             background-color: gray;
             color: white;
-            padding: 20px;
+            
         }
         
         td,th {
             border: 1px solid black;
+            padding: 10px;
         }
 
         th {
             background-color: gray;
             color: white;
+        }
+        td.negrito {
+            font-weight: bold;
         }
         
     </style>
@@ -33,19 +37,22 @@
     <table>
         
             <thead>
-                <th>Área</th>
-                <th>Disciplinas</th>
-                <th>
-                    <th>Notas</th>
-                    <th>Nota 1</th>
-                    <th>Nota 2</th>
-                </th>
-                <th>Média</th>
+                <tr>
+                    <th rowspan="2">Área</th>
+                    <th rowspan="2">Disciplinas</th>
+                    <th colspan="2">Notas</th>
+                    <th rowspan="2">Média</th>
+                </tr>
+
+                <tr>
+                    <th>Nota1</th>
+                    <th>Nota2</th>
+                </tr>
             </thead>
 
             <tbody>
              <tr>
-                <td rowspan="4">Exatas</td>
+                <td rowspan="4" class="negrito">Exatas</td>
                 <td>Matematica</td>
                 <td>2.5</td>
                 <td>4.5</td>
@@ -78,7 +85,7 @@
              </tr>
 
              <tr>
-                <td rowspan="2">Humanas</td>
+                <td rowspan="2" class="negrito">Humanas</td>
                 <td>História</td>
                 <td>4.5</td>
                 <td>6.5</td>
